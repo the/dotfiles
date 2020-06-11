@@ -1,0 +1,9 @@
+[push]
+	default = current
+[alias]
+	current = symbolic-ref --short HEAD
+	recent = !git branch --sort=-committerdate -v | head -n 10
+	search = "!git branch -a | grep "
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
