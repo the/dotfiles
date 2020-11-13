@@ -2,6 +2,8 @@ set ruler
 set title
 set titlestring=%f title
 set nobackup
+set noswapfile
+set hidden " allow hiding a buffer with unsaved changes
 
 colorscheme darkblue 
 syntax on
@@ -16,5 +18,8 @@ set number
 
 imap § <ESC>
 
-:nnoremap <C-g> :NERDTreeToggle<CR>
+:nnoremap <C-g> :Vexplore<CR>
 
+filetype plugin indent on
+
+let g:go_fmt_command = "goimports"
