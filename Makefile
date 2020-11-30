@@ -14,3 +14,4 @@ git:
 vim:
 	git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
 	git clone --branch v1.24 https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
+	git clone https://github.com/hashivim/vim-terraform.git ~/.vim/pack/plugins/start/vim-terraform

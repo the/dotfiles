@@ -36,3 +36,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Golang
 let g:go_fmt_command = "goimports"
+
+" Terraform
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1
