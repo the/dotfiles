@@ -1,8 +1,9 @@
 DOTFILES_DIR=.dotfiles
 
 .PHONY: install
-install: git
+install:
 	ln -s $(DOTFILES_DIR)/vimrc ../.vimrc
+	ln -s $(DOTFILES_DIR)/tmux.conf ../.tmux.conf
 
 .PHONY: git
 git:

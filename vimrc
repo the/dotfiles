@@ -20,8 +20,10 @@ colorscheme darkblue
 syntax on
 
 set tabstop=4
+set shiftwidth=4
 set expandtab
 
+filetype plugin on
 filetype plugin indent on
 
 imap § <ESC>
@@ -55,7 +57,8 @@ call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'preservim/nerdtree'
 Plug 'hashivim/vim-terraform'
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive' " :Git blame
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary' " gcc or visual-mode gc
+Plug 'vim-airline/vim-airline'
 call plug#end()
