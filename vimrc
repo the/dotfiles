@@ -36,6 +36,7 @@ let g:netrw_liststyle=3
 
 " NERDTree
 :nnoremap <C-g> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Golang
